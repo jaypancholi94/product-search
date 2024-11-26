@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import React from 'react';
+import React, { Suspense } from 'react';
 import './globals.css';
 import { ProductSearchProvider } from '@/context/product-search-context';
 
@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <ProductSearchProvider>{children}</ProductSearchProvider>
+        <Suspense>
+          <ProductSearchProvider>{children}</ProductSearchProvider>
+        </Suspense>
       </body>
     </html>
   );
