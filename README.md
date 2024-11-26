@@ -25,7 +25,7 @@ A simple Next.js application that allows users to search for products in real ti
 
 ## Demo
 
-Check out the live demo [here](product-search-azure.vercel.app).
+Check out the live demo [here](https://product-search-azure.vercel.app).
 
 ## Getting Started
 
